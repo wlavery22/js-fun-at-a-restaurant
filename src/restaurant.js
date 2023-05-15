@@ -1,7 +1,13 @@
-
+function createRestaurant(restaurantName) {
+  var pizzaRestaurant = {
+    name: restaurantName,
+    menus: {}
+  }
+  return pizzaRestaurant
+}
 
 module.exports = {
-  // createRestaurant, 
+  createRestaurant, 
   // addMenuItem,
   // removeMenuItem,
   // checkForFood
