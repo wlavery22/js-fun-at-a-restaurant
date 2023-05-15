@@ -1,14 +1,24 @@
 function createRestaurant(restaurantName) {
   var pizzaRestaurant = {
     name: restaurantName,
-    menus: {}
+    menus: {
+      breakfast: [],
+      lunch: [],
+      dinner: []
+    }
   }
+  console.log(pizzaRestaurant.menus)
   return pizzaRestaurant
+  
+}
+
+function addMenuItem() {
+
 }
 
 module.exports = {
   createRestaurant, 
-  // addMenuItem,
+  addMenuItem,
   // removeMenuItem,
   // checkForFood
 }
