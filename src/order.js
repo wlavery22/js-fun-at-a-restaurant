@@ -30,20 +30,7 @@ function listItems(items) {
 }
   return itemNames.join(", ")
 }
-// var order1 = {
-//   orderNumber: 1234,
-//   item: "burger",
-//   price: "8.99",
-//   orderType: "delivery",
-//   status: "accepted"
-// };
-// var order2 = {
-//   orderNumber: 2342,
-//   item: "blt sandwich",
-//   price: "5.99",
-//   orderType: "delivery",
-//   status: "accepted"
-// };
+
 function searchOrder(deliveryOrders, food) {
   var items = [];
   for (var i = 0; i < deliveryOrders.length; i++) {
@@ -53,17 +40,6 @@ function searchOrder(deliveryOrders, food) {
   // console.log(items);
 }
 
-// var deliveryOrders = [order1, order2];
-// function searchOrder(deliveryOrders, itemName) {
-//   var orderStatus = false;
-//   for (var i = 0; i < deliveryOrders.length; i++) {
-//     if (deliveryOrders[i].item === itemName) {
-//       orderStatus = true;
-//     }
-//   }
-//   return orderStatus
-// }
-// console.log(listItems(items));
 module.exports = {
   takeOrder,
   refundOrder,
